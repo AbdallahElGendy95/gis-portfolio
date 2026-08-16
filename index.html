@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdallah El-Gendy — GIS &amp; Point Cloud Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="shortcut icon" href="./icon/Electric Blue and Gray Logo Design.png" type="image/x-icon">
+<link rel="shortcut icon" href="../icons.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          survey: {
+            night:   '#0A121F',
+            panel:   '#101B2D',
+            line:    '#22344C',
+            cyan:    '#5CE1D6',
+            amber:   '#F2A65A',
+            paper:   '#E9EEF3',
+            mute:    '#7C8FAA',
+          }
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body bg-survey-night text-survey-paper antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-survey-night/70 border-b border-survey-line">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#top" class="tick text-xs sm:text-sm text-survey-cyan">A.EL-GENDY <span class="text-survey-mute">/ GIS-01</span></a>
+    <nav class="hidden md:flex gap-8 tick text-xs text-survey-mute">
+      <a href="#about" class="hover:text-survey-cyan transition">01 · ABOUT</a>
+      <a href="#experience" class="hover:text-survey-cyan transition">02 · EXPERIENCE</a>
+      <a href="#projects" class="hover:text-survey-cyan transition">03 · PROJECTS</a>
+      <a href="#skills" class="hover:text-survey-cyan transition">04 · SKILLS</a>
+      <a href="#contact" class="hover:text-survey-cyan transition">05 · CONTACT</a>
+    </nav>
+    <a href="#contact" class="tick text-xs border border-survey-cyan text-survey-cyan px-3 py-1.5 rounded-sm hover:bg-survey-cyan hover:text-survey-night transition">GET IN TOUCH</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-screen flex items-center overflow-hidden grid-overlay">
+  <canvas id="cloud" class="absolute inset-0 w-full h-full"></canvas>
+  <div class="scanline"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-16 w-full">
+    <p class="tick text-survey-amber text-xs sm:text-sm mb-4">30.0444° N, 31.2357° E — CAIRO, EGYPT</p>
+    <h1 class="font-display font-semibold text-4xl sm:text-6xl md:text-7xl leading-[1.05] max-w-3xl">
+      Abdallah Mohamed El-Gendy
+    </h1>
+    <p class="font-display text-xl sm:text-2xl text-survey-cyan mt-4">GIS Specialist — Point Cloud &amp; Mobile Mapping</p>
+    <p class="text-survey-mute max-w-xl mt-6 leading-relaxed">
+      Turning raw LiDAR and mobile-mapping scans into usable geospatial intelligence — from airport runways
+      in Jeddah to road corridors and utility networks across Saudi Arabia.
+    </p>
+    <div class="flex flex-wrap gap-4 mt-8">
+      <a href="#projects" class="tick text-xs bg-survey-cyan text-survey-night px-5 py-3 rounded-sm hover:bg-white transition">VIEW PROJECT LOG →</a>
+      <a href="mailto:Abdallahmelgendy95@gmail.com" class="tick text-xs border border-survey-line text-survey-paper px-5 py-3 rounded-sm hover:border-survey-cyan hover:text-survey-cyan transition">EMAIL DIRECTLY</a>
+    </div>
+    <div class="flex flex-wrap gap-x-10 gap-y-4 mt-14 tick text-xs text-survey-mute">
+      <div><span class="text-2xl text-survey-paper font-display block">3+</span>YRS FIELD &amp; PROCESSING</div>
+      <div><span class="text-2xl text-survey-paper font-display block">5</span>MAJOR KSA PROJECTS</div>
+      <div><span class="text-2xl text-survey-paper font-display block">10+</span>GIS/CAD TOOLS</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-28 border-t border-survey-line">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-5 gap-12">
+    <div class="md:col-span-3 reveal">
+      <p class="tick text-survey-amber text-xs mb-3">01 / ABOUT</p>
+      <h2 class="font-display text-3xl sm:text-4xl mb-6">From the field to the geodatabase.</h2>
+      <p class="text-survey-mute leading-relaxed mb-4">
+        I'm a detail-oriented GIS specialist with a background in surveying, mobile mapping systems, and
+        cloud-based point cloud processing. Since 2023 I've worked across large-scale infrastructure and
+        electrical network projects in Saudi Arabia — filtering raw scans, extracting features, and building
+        the geodatabases that engineering teams rely on downstream.
+      </p>
+      <p class="text-survey-mute leading-relaxed">
+        Before GIS, I spent two years coordinating bookings and travel logistics as a tourist information
+        officer — work that sharpened the project coordination and stakeholder communication I now bring to
+        multi-team infrastructure surveys.
+      </p>
+    </div>
+    <div class="md:col-span-2 reveal">
+      <div class="border border-survey-line rounded-sm p-6 bg-survey-panel/60">
+        <p class="tick text-xs text-survey-cyan mb-4">READOUT</p>
+        <dl class="space-y-4 text-sm">
+          <div class="flex justify-between border-b border-survey-line pb-2">
+            <dt class="text-survey-mute">Based</dt><dd class="tick">Nasr City, Cairo</dd>
+          </div>
+          <div class="flex justify-between border-b border-survey-line pb-2">
+            <dt class="text-survey-mute">Field of work</dt><dd class="tick">GIS / LiDAR / CAD</dd>
+          </div>
+          <div class="flex justify-between border-b border-survey-line pb-2">
+            <dt class="text-survey-mute">Current role</dt><dd class="tick">GIS Specialist, AJC Consult</dd>
+          </div>
+          <div class="flex justify-between border-b border-survey-line pb-2">
+            <dt class="text-survey-mute">Languages</dt><dd class="tick">AR (native), EN (C1)</dd>
+          </div>
+          <div class="flex justify-between">
+            <dt class="text-survey-mute">Nationality</dt><dd class="tick">Egyptian</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="relative py-28 border-t border-survey-line bg-survey-panel/30">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="tick text-survey-amber text-xs mb-3 reveal">02 / EXPERIENCE</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-16 reveal">Career benchmarks.</h2>
+
+    <div class="relative pl-8 sm:pl-12 border-l border-survey-line space-y-16">
+
+      <div class="relative reveal">
+        <span class="absolute -left-[41px] sm:-left-[57px] top-1 w-4 h-4 rounded-full bg-survey-cyan shadow-[0_0_0_4px_rgba(92,225,214,0.15)]"></span>
+        <p class="tick text-xs text-survey-cyan mb-1">BM-01 · JAN 2023 — PRESENT</p>
+        <h3 class="font-display text-2xl mb-2">GIS Specialist — AJC Consult, Cairo</h3>
+        <p class="text-survey-mute leading-relaxed max-w-3xl mb-4">
+          Process raw LiDAR and mobile-mapping point clouds end to end: filtering noise, extracting features
+          such as roads, buildings, and utilities, and classifying ground, vegetation, and structures.
+          Build and maintain geodatabases in ArcGIS Pro, run spatial and 3D analysis, and QC extracted models
+          against source data before handoff to engineering and urban planning teams.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip tick text-[11px] border border-survey-line rounded-full px-3 py-1">Point Cloud Processing</span>
+          <span class="chip tick text-[11px] border border-survey-line rounded-full px-3 py-1">Feature Extraction</span>
+          <span class="chip tick text-[11px] border border-survey-line rounded-full px-3 py-1">Geodatabase Design</span>
+          <span class="chip tick text-[11px] border border-survey-line rounded-full px-3 py-1">QA/QC</span>
+        </div>
+      </div>
+
+      <div class="relative reveal">
+        <span class="absolute -left-[41px] sm:-left-[57px] top-1 w-4 h-4 rounded-full bg-survey-mute/60 shadow-[0_0_0_4px_rgba(124,143,170,0.12)]"></span>
+        <p class="tick text-xs text-survey-mute mb-1">BM-00 · FEB 2020 — OCT 2022</p>
+        <h3 class="font-display text-2xl mb-2">Tourist Information Officer — Travaro Tours, Cairo</h3>
+        <p class="text-survey-mute leading-relaxed max-w-3xl">
+          Managed bookings and customer communication end to end, coordinating travel packages across
+          multiple vendors — early ground in the project coordination and stakeholder communication now used
+          on multi-disciplinary survey teams.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / MAP -->
+<section id="projects" class="relative py-28 border-t border-survey-line">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="tick text-survey-amber text-xs mb-3 reveal">03 / PROJECT LOG</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-4 reveal">Five sites, one survey career.</h2>
+    <p class="text-survey-mute max-w-2xl mb-14 reveal">Hover a marker or a log entry — they're linked. Each site reflects real field-to-geodatabase work delivered between 2023 and 2026.</p>
+
+    <div class="grid lg:grid-cols-5 gap-10 items-start">
+      <!-- MAP -->
+      <div class="lg:col-span-2 reveal">
+        <div class="border border-survey-line rounded-sm bg-survey-panel/50 p-4 sticky top-24">
+          <svg viewBox="0 0 400 420" class="w-full h-auto" id="map-svg">
+            <!-- simplified landmass silhouette (stylised, non-navigational) -->
+            <path d="M40 40 L150 20 L230 45 L270 30 L340 60 L360 120 L330 190 L350 250 L300 320 L250 380 L170 400 L90 360 L60 300 L30 220 L45 130 Z"
+                  fill="#0F1B2C" stroke="#22344C" stroke-width="1.5"/>
+            <g stroke="#1B2A40" stroke-width="1">
+              <line x1="0" y1="90" x2="400" y2="90"/>
+              <line x1="0" y1="180" x2="400" y2="180"/>
+              <line x1="0" y1="270" x2="400" y2="270"/>
+              <line x1="0" y1="360" x2="400" y2="360"/>
+              <line x1="90" y1="0" x2="90" y2="420"/>
+              <line x1="180" y1="0" x2="180" y2="420"/>
+              <line x1="270" y1="0" x2="270" y2="420"/>
+              <line x1="360" y1="0" x2="360" y2="420"/>
+            </g>
+            <!-- pins injected by JS -->
+            <g id="pins"></g>
+          </svg>
+          <p class="tick text-[10px] text-survey-mute mt-3 text-center">STYLISED SITE MAP — EGYPT / SAUDI ARABIA (NOT TO SCALE)</p>
+        </div>
+      </div>
+
+      <!-- LOG -->
+      <div class="lg:col-span-3 space-y-3" id="project-log">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="relative py-28 border-t border-survey-line bg-survey-panel/30">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="tick text-survey-amber text-xs mb-3 reveal">04 / SKILL LAYERS</p>
+    <h2 class="font-display text-3xl sm:text-4xl mb-14 reveal">Stacked like a scan.</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="reveal">
+        <p class="tick text-xs text-survey-cyan mb-4">CORE GIS</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">GIS Analysis &amp; Mapping</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Point Cloud Processing (LiDAR)</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Mobile Mapping Systems</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Remote Sensing</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Feature Extraction &amp; Classification</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="tick text-xs text-survey-cyan mb-4">SOFTWARE</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">ArcGIS Pro</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">AutoCAD</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Orbit3D</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">TBC</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">TopoDot</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">MicroStation 2D/3D</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Civil 3D (in progress)</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">HTML / CSS / JavaScript</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="tick text-xs text-survey-cyan mb-4">DATA &amp; TECHNICAL</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Geospatial Data Integration</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Large-Scale Data Processing</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Data Validation &amp; QC</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Total Stations</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">UAV / Drone Data Processing</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">3D Modeling &amp; Visualization</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="tick text-xs text-survey-cyan mb-4">SOFT SKILLS</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Problem Solving</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Attention to Detail</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Communication</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Team Collaboration</span>
+          <span class="chip tick text-xs border border-survey-line rounded-full px-3 py-1.5">Project Coordination</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Languages -->
+    <div class="grid md:grid-cols-2 gap-10 mt-20">
+      <div class="reveal border border-survey-line rounded-sm p-6 bg-survey-panel/50">
+        <p class="tick text-xs text-survey-amber mb-3">EDUCATION</p>
+        <h3 class="font-display text-xl mb-1">Bachelor's Degree, Accounting &amp; Auditing</h3>
+        <p class="text-survey-mute text-sm">Egyptian Institute of Alexandria Academy for Management and Accounting — Sep 2016 – Sep 2022</p>
+      </div>
+      <div class="reveal border border-survey-line rounded-sm p-6 bg-survey-panel/50">
+        <p class="tick text-xs text-survey-amber mb-4">LANGUAGES</p>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between tick text-xs mb-1"><span>ARABIC</span><span class="text-survey-cyan">NATIVE</span></div>
+            <div class="h-1.5 w-full bg-survey-line rounded-full overflow-hidden"><div class="lang-bar-fill h-full bg-survey-cyan" data-w="100"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between tick text-xs mb-1"><span>ENGLISH</span><span class="text-survey-cyan">C1</span></div>
+            <div class="h-1.5 w-full bg-survey-line rounded-full overflow-hidden"><div class="lang-bar-fill h-full bg-survey-cyan" data-w="85"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between tick text-xs mb-1"><span>GERMAN</span><span class="text-survey-cyan">A2</span></div>
+            <div class="h-1.5 w-full bg-survey-line rounded-full overflow-hidden"><div class="lang-bar-fill h-full bg-survey-cyan" data-w="30"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-28 border-t border-survey-line">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <p class="tick text-survey-amber text-xs mb-3">05 / CONTACT</p>
+      <h2 class="font-display text-3xl sm:text-4xl mb-6">Let's map something out.</h2>
+      <p class="text-survey-mute max-w-md leading-relaxed">
+        Open to GIS, LiDAR processing, and mobile-mapping roles across infrastructure, utilities, and
+        transport projects. Reach out directly — I usually reply within a day.
+      </p>
+    </div>
+    <div class="reveal border border-survey-line rounded-sm p-6 bg-survey-panel/50 space-y-4">
+      <a href="mailto:Abdallahmelgendy95@gmail.com" class="flex justify-between items-center tick text-sm border-b border-survey-line pb-3 hover:text-survey-cyan transition">
+        <span class="text-survey-mute">EMAIL</span><span>Abdallahmelgendy95@gmail.com</span>
+      </a>
+      <a href="https://wa.me/201000802506" target="_blank" class="flex justify-between items-center tick text-sm border-b border-survey-line pb-3 hover:text-survey-cyan transition">
+        <span class="text-survey-mute">WHATSAPP</span><span>+20 100 080 2506</span>
+      </a>
+      <a href="https://www.linkedin.com/in/abdallah-elgendy95/" target="_blank" class="flex justify-between items-center tick text-sm border-b border-survey-line pb-3 hover:text-survey-cyan transition">
+        <span class="text-survey-mute">LINKEDIN</span><span>/in/abdallah-elgendy95</span>
+      </a>
+      </a>
+      <a href="https://www.linkedin.com/in/abdallah-elgendy95/" target="_blank"
+        class="flex justify-between items-center tick text-sm border-b border-survey-line pb-3 hover:text-survey-cyan transition">
+        <span class="text-survey-mute">GitHub</span><span>/GitHub/abdallah-m-h</span>
+      </a>
+      <div class="flex justify-between items-center tick text-sm">
+        <span class="text-survey-mute">LOCATION</span><span>Nasr City, Cairo, Egypt</span>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 mt-20 pt-8 border-t border-survey-line flex flex-col sm:flex-row justify-between gap-2 tick text-[11px] text-survey-mute">
+    <span>© 2026 ABDALLAH EL-GENDY — SURVEY LOG CLOSED</span>
+    <span>BUILT WITH HTML · TAILWIND · JS</span>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
